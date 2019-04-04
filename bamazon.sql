@@ -11,8 +11,10 @@ CREATE TABLE products (
     PRIMARY KEY (item_id)
 );
 
+
+
 INSERT INTO products(product_name, department_name, price, stock_quantity)
-VALUE ("old jeans", "clothing", 30.00, 100);
+VALUE ("old jeans", "clothing", 30.00, 3);
 
 INSERT INTO products(product_name, department_name, price, stock_quantity)
 VALUE ("face cleanser", "beauty", 24.99, 46);
@@ -24,7 +26,7 @@ INSERT INTO products(product_name, department_name, price, stock_quantity)
 VALUE ("4k tv", "electronics", 499.99, 65);
 
 INSERT INTO products(product_name, department_name, price, stock_quantity)
-VALUE ("cardigan", "clothing", 20.00, 300);
+VALUE ("cardigan", "clothing", 20.00, 3);
 
 INSERT INTO products(product_name, department_name, price, stock_quantity)
 VALUE ("used laptop", "electronics", 250.00, 50);
@@ -33,7 +35,15 @@ INSERT INTO products(product_name, department_name, price, stock_quantity)
 VALUE ("mahogany table", "furniture", 90.00, 130);
 
 INSERT INTO products(product_name, department_name, price, stock_quantity)
-VALUE ("stockings", "clothing", 5.00, 400);
+VALUE ("stockings", "clothing", 5.00, 2);
 
 INSERT INTO products(product_name, department_name, price, stock_quantity)
 VALUE ("eye cream", "beauty", 40.00, 90);
+
+INSERT INTO products(product_name, department_name, price, stock_quantity)
+VALUE ("airpods", "electronics", 149.99, 137);
+
+SELECT * FROM products;
+
+
+UPDATE products SET stock_quantity=3 WHERE product_name in ("old jeans", "sofa", "4k tv");

@@ -7,10 +7,10 @@ This is an app that will list the inventory to the user, allow user to choose an
 ## How to use the app - Customer Front
 
     1. Run the app: node bamazonCustomer.js
-    ![alt text](./images/node1.png)
+    ![image1](images/node1.png)
 
     2. Choose an item from the inventory that's given
-    ![alt text](./images/node2.png)
+    ![image2](images/node2.png)
 
     3. Then choose how many you want to buy
      ![alt text](./images/node3.png)
